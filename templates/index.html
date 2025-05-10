@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neon Downloader</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Neon Downloader</h1>
+    <p class="subtitle">Download videos from YouTube & TikTok</p>
 
+    <form id="downloadForm">
+      <input type="text" placeholder="Paste YouTube or TikTok link here..." required/>
+      <select>
+        <option value="youtube">YouTube</option>
+        <option value="tiktok">TikTok</option>
+      </select>
+      <button type="submit">Download</button>
+    </form>
+<script>
+document.getElementById("downloadForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const url = this.querySelector("input").value;
+  const platform = this.querySelector("select").value;
+
+  const response = await fetch("http://127.0.0.1:5000/download", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ url, platform }),
+  });
+
+  if (response.ok) {
+    const blob = await response.blob();
+    const downloadUrl = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = downloadUrl;
+    a.download = "video.mp4";
+    a.click();
+  } else {
+    alert("Download failed");
+  }
+});
+</script>
+    <p class="note">*This is a UI demo only. Backend not implemented.</p>
+  </div>
+</body>
+</html>
