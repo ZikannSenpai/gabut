@@ -64,7 +64,6 @@ input[type="number"] {
 
 input::placeholder {
   font-family: 'Courier New', Monospace;
-  background-color: red;
   text-shadow: 0 0 10px red;
   text-style: italic;
   text-weight: bold;
