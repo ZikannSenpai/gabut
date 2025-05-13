@@ -54,22 +54,12 @@ input[type="number"] {
   width: 90%;
   padding: 8px;
   margin: 8px 0;
-  border: none;
+  border: 2px solid red;
+  box-shadow: 0 0 10px red;
   border-radius: 8px;
   background-color: #000;
   color: red;
   text-shadow: 0 0 10px red;
-  font-size: 14px;
-}
-
-input::placeholder {
-  font-family: 'Courier New', Monospace;
-  text-style: italic;
-}
-
-.input-id {
-  border-radius: 6px;
-  border: 1px solid #ccc;
   font-size: 14px;
 }
 
