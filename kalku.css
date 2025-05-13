@@ -1,0 +1,107 @@
+body {
+  background-color: #000;
+  font-family: 'Courier New', Monospace;
+  margin: 0;
+  padding: 0;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid red;
+  box-shadow: 0 0 15px red;
+}
+
+.logo-title {
+  margin-top: 10px;
+  text-shadow: 0 0 10px red;
+  display: flex;
+  align-items: center;
+  text-decoration: 0 0 10px red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.calculator {
+  background-color: #111;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 20px red;
+  text-align: center;
+  width: 260px;
+}
+
+.calculator h3 {
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px red;
+  font-size: 18px;
+}
+
+input[type="number"] {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #000;
+  color: red;
+  text-shadow: 0 0 10px red;
+  font-size: 14px;
+}
+
+.buttons {
+  font-family: 'Courier New', Monospace;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+button {
+  font-family: 'Courier New', Monospace;
+  font-weight: bold;
+  background-color: #000;
+  color: red;
+  border: 2px solid red;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: red;
+  color: #000;
+  box-shadow: 0 0 20px red;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  text-shadow: 0 0 10px;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.fade {
+  animation: fadeEffect 0.4s;
+}
+
+@keyframes fadeEffect {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
