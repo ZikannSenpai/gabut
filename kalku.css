@@ -65,7 +65,12 @@ input[type="number"] {
 input::placeholder {
   font-family: 'Courier New', Monospace;
   text-style: italic;
-  text-weight: bold;
+}
+
+.input-id {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
 }
 
 .buttons {
