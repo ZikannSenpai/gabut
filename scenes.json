@@ -6,7 +6,7 @@
             "lines": [
                 {
                     "actor": "Tsukasa",
-                    "sprite": "hana_normal.png",
+                    "sprite": "t_normal.png",
                     "text": "Hai... kamu murid baru ya?"
                 },
 
@@ -17,7 +17,7 @@
 
                 {
                     "actor": "Tsukasa",
-                    "sprite": "hana_smile.png",
+                    "sprite": "t_smile.png",
                     "text": "Hmm... mau keliling sekolah bareng?",
                     "choices": [
                         {
