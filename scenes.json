@@ -1,0 +1,64 @@
+{
+ "scenes":[
+
+  {
+   "id":"intro",
+   "bg":"school.png",
+   "lines":[
+
+    {
+     "actor":"Hana",
+     "sprite":"hana_normal.png",
+     "text":"Hai... kamu murid baru ya?"
+    },
+
+    {
+     "actor":"Player",
+     "text":"Iya, baru pindah hari ini."
+    },
+
+    {
+     "actor":"Hana",
+     "sprite":"hana_smile.png",
+     "text":"Hmm... mau keliling sekolah bareng?",
+     "choices":[
+      {
+       "text":"Ayo",
+       "goto":"yes_route"
+      },
+      {
+       "text":"Nggak dulu",
+       "goto":"no_route"
+      }
+     ]
+    }
+
+   ]
+  },
+
+  {
+   "id":"yes_route",
+   "bg":"garden.png",
+   "lines":[
+    {
+     "actor":"Hana",
+     "sprite":"hana_happy.png",
+     "text":"Yay! ikut aku."
+    }
+   ]
+  },
+
+  {
+   "id":"no_route",
+   "bg":"class.png",
+   "lines":[
+    {
+     "actor":"Hana",
+     "sprite":"hana_sad.png",
+     "text":"Oh... yaudah."
+    }
+   ]
+  }
+
+ ]
+}
