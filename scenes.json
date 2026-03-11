@@ -2,7 +2,7 @@
     "scenes": [
         {
             "id": "intro",
-            "bg": "school.png",
+            "bg": "school.jpg",
             "music": "school.mp3",
             "lines": [
                 {
