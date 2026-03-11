@@ -1,29 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<title>Anime VN</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Anime VN</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
 
-<div id="game">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="game">
+            <div id="background"></div>
 
-<div id="background"></div>
+            <img id="character" />
 
-<img id="character">
+            <div id="dialogBox">
+                <div id="name"></div>
+                <div id="text"></div>
 
-<div id="dialogBox">
-<div id="name"></div>
-<div id="text"></div>
+                <div id="choices"></div>
 
-<div id="choices"></div>
+                <button id="next">Next</button>
+            </div>
+        </div>
 
-<button id="next">Next</button>
-</div>
-
-</div>
-
-<script src="game.js"></script>
-</body>
+        <script src="game.js"></script>
+    </body>
 </html>
