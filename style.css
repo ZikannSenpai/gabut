@@ -30,13 +30,14 @@ body {
     transition: opacity 0.6s;
 }
 
-#character {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 75vh;
-    width: auto;
+#character{
+position:absolute;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+height:auto;
+max-height:80%;
+max-width:60%;
 }
 
 #dialogBox {
